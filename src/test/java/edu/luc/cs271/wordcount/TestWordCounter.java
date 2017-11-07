@@ -9,17 +9,19 @@ import org.junit.Test;
 public class TestWordCounter {
 
   // TODO complete this test class
-
+  WordCounter sample;
   // TODO declare a reference to the SUT (system under test), i.e., WordCounter
 
   @Before
   public void setUp() {
     // TODO create the SUT instance
+    WordCounter sample=new WordCounter
   }
 
   @After
   public void tearDown() {
     // TODO set the SUT instance to null
+    WordCounter sample= null;
   }
 
   @Test
