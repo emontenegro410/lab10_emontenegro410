@@ -8,28 +8,28 @@ import org.junit.Test;
 
 public class TestWordCounter {
 
-  // TODO complete this test class
-  WordCounter sample;
+  // kinda TODO complete this test class
+ private WordCounter sample;
+
   // TODO declare a reference to the SUT (system under test), i.e., WordCounter
 
   @Before
   public void setUp() {
-    // TODO create the SUT instance
-    WordCounter sample=new WordCounter
+    // kinda TODO create the SUT instance
+     sample=new WordCounter;
   }
 
   @After
   public void tearDown() {
-    // TODO set the SUT instance to null
-    WordCounter sample= null;
+    // kinda TODO set the SUT instance to null
+    sample= null;
   }
 
   @Test
   public void testGetCountEmpty() {
 
     // TODO verify that the SUT initially returns an empty map
-    fail();
-
+    assertTrue(WordCounter.isEmpty());
   }
 
   @Test
@@ -38,7 +38,13 @@ public class TestWordCounter {
     // TODO run the SUT on a specific String iterator with some repeated words,
     // then use assertions to verify the correct counts
     // do this for at least two words in the iterator and two not in the iterator
-    fail();
-
+    int correctCounts = WordCounter.getCount("the");
+    assertEquals(correctCounts, 15);
+    int correctCountsTwo = WordCounter.getCount("and");
+    assertEquals(correctCountsTwo, 12);
+    int correctCountsThree = WordCounter.getCount("yryty");
+    assertEquals(correctCountsThree, 0);
+    int correctCountsFour = WordCounter.getCount("ejiww");
+    assertEquals(correctCountsFour, 0);
   }
 }
