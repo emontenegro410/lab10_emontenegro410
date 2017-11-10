@@ -1,7 +1,6 @@
 package edu.luc.cs271.wordcount;
 
 import java.util.*;
-import java.io.*;
 
 public class Main {
 
